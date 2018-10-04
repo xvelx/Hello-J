@@ -7,5 +7,11 @@ node {
 				sh "java HelloJ.class"
 			}
 		}
+
+		stage("Clean") {
+			steps {
+				sh "rm HelloJ.class"
+			}
+		}
 	}
 }
